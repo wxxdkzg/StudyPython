@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>主窗口测试</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>测试按钮</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>30</y>
+      <width>261</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout1"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <widget class="QMenu" name="menuSet">
+     <property name="title">
+      <string>显示提示框</string>
+     </property>
+     <addaction name="actionPage1"/>
+     <addaction name="actionPage2"/>
+    </widget>
+    <addaction name="actionopen"/>
+    <addaction name="actionclose"/>
+    <addaction name="separator"/>
+    <addaction name="menuSet"/>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>系统信息(&amp;I)</string>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>true</bool>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionSystemInfo"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen"/>
+   <addaction name="actionclose"/>
+   <addaction name="separator"/>
+   <addaction name="actionPage1"/>
+   <addaction name="actionPage2"/>
+   <addaction name="separator"/>
+   <addaction name="actionSystemInfo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset>
+     <normaloff>Anki_2_32px_1183825_easyicon.net.ico</normaloff>Anki_2_32px_1183825_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开界面1</string>
+   </property>
+   <property name="iconText">
+    <string>打开界面1</string>
+   </property>
+   <property name="toolTip">
+    <string>打开测试界面1</string>
+   </property>
+   <property name="statusTip">
+    <string>打开界面为测试界面1</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+O</string>
+   </property>
+  </action>
+  <action name="actionclose">
+   <property name="icon">
+    <iconset>
+     <normaloff>2_direction_folded_32px_1184147_easyicon.net.ico</normaloff>2_direction_folded_32px_1184147_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>隐藏界面1</string>
+   </property>
+   <property name="toolTip">
+    <string>隐藏测试界面1</string>
+   </property>
+   <property name="statusTip">
+    <string>隐藏测试界面1</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="actionPage1">
+   <property name="icon">
+    <iconset>
+     <normaloff>setting_2_folded_32px_1184225_easyicon.net.ico</normaloff>setting_2_folded_32px_1184225_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>提示信息框</string>
+   </property>
+   <property name="iconText">
+    <string>弹出提示信息框</string>
+   </property>
+   <property name="toolTip">
+    <string>提示信息框已弹出</string>
+   </property>
+   <property name="statusTip">
+    <string>弹出提示信息框</string>
+   </property>
+  </action>
+  <action name="actionPage2">
+   <property name="icon">
+    <iconset>
+     <normaloff>flag_2_folded_32px_1184183_easyicon.net.ico</normaloff>flag_2_folded_32px_1184183_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>输入信息框</string>
+   </property>
+   <property name="iconText">
+    <string>弹出输入信息框</string>
+   </property>
+   <property name="toolTip">
+    <string>请输入数值</string>
+   </property>
+   <property name="statusTip">
+    <string>弹出输入信息框</string>
+   </property>
+  </action>
+  <action name="actionSystemInfo">
+   <property name="icon">
+    <iconset>
+     <normaloff>1Password_32px_1183799_easyicon.net.ico</normaloff>1Password_32px_1183799_easyicon.net.ico</iconset>
+   </property>
+   <property name="text">
+    <string>系统信息</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionexit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

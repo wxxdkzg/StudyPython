@@ -1,0 +1,10 @@
+2019-08-20 11:28:24 MyLogging.py[line:10] DEBUG debug message
+2019-08-20 11:28:24 MyLogging.py[line:11] INFO info message
+2019-08-20 11:28:24 MyLogging.py[line:12] WARNING warn message
+2019-08-20 11:28:24 MyLogging.py[line:13] ERROR error message
+2019-08-20 11:28:24 MyLogging.py[line:14] CRITICAL critical message
+2019-08-20 11:29:12 MyLogging.py[line:10] DEBUG debug message
+2019-08-20 11:29:12 MyLogging.py[line:11] INFO info message
+2019-08-20 11:29:12 MyLogging.py[line:12] WARNING warn message
+2019-08-20 11:29:12 MyLogging.py[line:13] ERROR error message
+2019-08-20 11:29:12 MyLogging.py[line:14] CRITICAL critical message
